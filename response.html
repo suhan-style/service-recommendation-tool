@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Appropriate Product Recommendation Tool</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--header-->
+    <div class="header-top container-fluid fixed-top">
+      <div class="row">
+          <div class="col-12 px-0">
+                <header>
+                    <div class="header_wrapper">
+                        <div id="logo">
+                            <img src="images/logo.png" alt="logo" />
+                        </div>
+                        <div class="menu">
+                            <ul class="nav">
+                                <li><a href="https://www.icicibank.ca/" class="nav-link">Personal</a></li>
+                                <li><a href="https://www.icicibank.ca/en/business/business" class="nav-link">Business</a></li>
+                                <li><a href="https://www.icicibank.ca/en/personal/moneytransfers/moneytransfers" class="nav-link">Money Transfers</a></li>
+                                <li><a href="https://www.icicibank.ca/en/personal/newcomers/hellocanada" class="nav-link">Newcomers to Canada</a></li>
+                                <li><a href="https://www.icicibank.ca/en/promo/two-homes-one-bank/index" class="nav-link">NRI</a></li>
+                                <li><a href="https://www.icicibank.ca/en/abouticicibank/aboutus/default" class="nav-link">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+    
+    <!--print header-->
+    <div class="print-header text-center">
+        <img src="images/logo.png" class="img-fluid" />
+    </div>
+    
+    <!--main content-->
+    <div id="main">
+        <div class="container-fluid">
+      <div class="row print-banner">
+         <div class="col-12 px-0">
+            <img src="images/GC_ICICI_Canada_Banner.jpg" alt="Banner" class="img-fluid w-100" />
+         </div>
+      </div>
+   </div>
+        <div id="APRT" class="container-fluid bg-light-gray">
+            <div id="title_main">
+              <div class="row pt-4">
+                 <div class="col-12">
+                    <div class="bg-red pd-left">
+                       <h1 class="text-white">Appropriate Product Recommendation Tool</h1>
+                    </div>
+                 </div>
+              </div>
+            </div>
+
+      <div class="row">
+         <div class="col-12">
+            <div class="pd-left pt-3">
+               <h3>Please find below the product recommendation(s), based on the information you provided in the Product Assessment Tool of the Bank</h3>
+            </div>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-12">
+            <div class="pd-left py-3">
+               <div id="print_pdf_btn_wrapper" data-html2canvas-ignore></div>
+               
+               <!--Custom Header To Display In PDF-->
+               <div id="headerToPrint">
+                   <p id="date" style="text-align:right;"></p>
+                   <div style="padding: 0px 0px 50px 0px;"><img src="images/logo.png" alt="Logo" /></div>
+                   <h1>Appropriate Product Recommendation Tool</h1>
+               </div>
+               
+               <div id="product_recommand">
+                  <!-- basic_chequing -->
+                  <div id="basic_chequing" class="hide box-wrapper">
+                     <div class="box-wrapper-content">
+                        <div class="title-desc-wrapper">
+                           <h4 class="text-uppercase">Basic Chequing</h4>
+                           <p class="desc">A simple solution to your chequing account needs</p>
+                        </div>
+                        <div class="btn-wrapper">
+                           <a href="https://www.icicibank.ca/en/promo/digitization/index" class="btn btn-primary bold">Apply Now</a>
+                           <a href="https://www.icicibank.ca/en/personal/accounts/basic-chequing-account" class="btn btn-primary bold btn-red">Learn More</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- hivalue_chequing -->
+                  <div id="hivalue_chequing" class="hide box-wrapper">
+                     <div class="box-wrapper-content">
+                        <div class="title-desc-wrapper">
+                           <h4 class="text-uppercase">Hivalue Chequing</h4>
+                           <p class="desc">A low fee chequing account</p>
+                        </div>
+                        <div class="btn-wrapper">
+                           <a href="https://www.icicibank.ca/en/promo/digitization/index" class="btn btn-primary bold">Apply Now</a>
+                           <a href="https://www.icicibank.ca/en/personal/accounts/personalchequing" class="btn btn-primary bold btn-red">Learn More</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- hivalue_plus -->
+                  <div id="hivalue_plus" class="hide box-wrapper">
+                     <div class="box-wrapper-content">
+                        <div class="title-desc-wrapper">
+                           <h4 class="text-uppercase">Hivalue Plus</h4>
+                           <p class="desc">A chequing account for all your day-to-day banking needs</p>
+                        </div>
+                        <div class="btn-wrapper">
+                           <a href="https://www.icicibank.ca/en/promo/digitization/index" class="btn btn-primary bold">Apply Now</a>
+                           <a href="https://www.icicibank.ca/en/personal/accounts/hivalueplus-chequing" class="btn btn-primary bold btn-red">Learn More</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- hisave_savings -->
+                  <div id="hisave_savings" class="hide box-wrapper">
+                     <div class="box-wrapper-content">
+                        <div class="title-desc-wrapper">
+                           <h4 class="text-uppercase">HiSAVE Savings</h4>
+                           <p class="desc">An online account that earns you high interest</p>
+                        </div>
+                        <div class="btn-wrapper">
+                           <a href="https://www.icicibank.ca/en/promo/digitization/index" class="btn btn-primary bold">Apply Now</a>
+                           <a href="https://www.icicibank.ca/en/personal/accounts/hisave" class="btn btn-primary bold btn-red">Learn More</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- premium_savings -->
+                  <div id="premium_savings" class="hide box-wrapper">
+                     <div class="box-wrapper-content">
+                        <div class="title-desc-wrapper">
+                           <h4 class="text-uppercase">Premium Savings</h4>
+                           <p class="desc">Enjoy the best of both worlds with high interest rates and branch access</p>
+                        </div>
+                        <div class="btn-wrapper">
+                           <a href="https://www.icicibank.ca/en/promo/digitization/index" class="btn btn-primary bold">Apply Now</a>
+                           <a href="https://www.icicibank.ca/en/personal/accounts/premiumsavings" class="btn btn-primary bold btn-red">Learn More</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- redeemable_gic_and_term_deposit -->
+                  <div id="redeemable_gic_and_term_deposit" class="hide box-wrapper">
+                     <div class="box-wrapper-content">
+                        <div class="title-desc-wrapper">
+                           <h4 class="text-uppercase">Redeemable GIC & Term Deposit</h4>
+                           <p class="desc">Invest at a guaranteed interest rate for a fixed term</p>
+                        </div>
+                        <div class="btn-wrapper">
+                           <a href="https://infinity.icicibank.ca/CARET/BANKAWAY?Action.ICICAAOF.NewUser.Init=Y&AppSignonBankId=ICI86" class="btn btn-primary bold">Apply Now</a>
+                           <a href="https://www.icicibank.ca/en/personal/investments/gics-n-term-deposits/term-deposits" class="btn btn-primary bold btn-red">Learn More</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- non_redeemable_gic_and_term_deposit -->
+                  <div id="non_redeemable_gic_and_term_deposit" class="hide box-wrapper">
+                     <div class="box-wrapper-content">
+                        <div class="title-desc-wrapper">
+                           <h4 class="text-uppercase">Non-Redeemable GIC & Term Deposit</h4>
+                           <p class="desc">Invest at a guaranteed interest rate for a fixed term</p>
+                        </div>
+                        <div class="btn-wrapper">
+                           <a href="https://infinity.icicibank.ca/CARET/BANKAWAY?Action.ICICAAOF.NewUser.Init=Y&AppSignonBankId=ICI86" class="btn btn-primary bold">Apply Now</a>
+                           <a href="https://www.icicibank.ca/en/personal/investments/gics-n-term-deposits/nonterm-deposits" class="btn btn-primary bold btn-red">Learn More</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- tax_free_savings -->
+                  <div id="tax_free_savings" class="hide box-wrapper">
+                     <div class="box-wrapper-content">
+                        <div class="title-desc-wrapper">
+                           <h4 class="text-uppercase">Tax Free Savings</h4>
+                           <p class="desc">Flexible options to earn interest tax-free</p>
+                        </div>
+                        <div class="btn-wrapper">
+                           <a href="https://infinity.icicibank.ca/CARET/BANKAWAY?Action.ICICAAOF.NewUser.Init=Y&AppSignonBankId=ICI86" class="btn btn-primary bold">Apply Now</a>
+                           <a href="https://www.icicibank.ca/en/personal/investments/tfsa" class="btn btn-primary bold btn-red">Learn More</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- tax_free_gic -->
+                  <div id="tax_free_gic" class="hide box-wrapper">
+                     <div class="box-wrapper-content">
+                        <div class="title-desc-wrapper">
+                           <h4 class="text-uppercase">Tax Free GIC</h4>
+                           <p class="desc">Invest at a guaranteed interest rate for a fixed term</p>
+                        </div>
+                        <div class="btn-wrapper">
+                           <a href="https://infinity.icicibank.ca/CARET/BANKAWAY?Action.ICICAAOF.NewUser.Init=Y&AppSignonBankId=ICI86" class="btn btn-primary bold">Apply Now</a>
+                           <a href="https://www.icicibank.ca/en/personal/investments/tfsa" class="btn btn-primary bold btn-red">Learn More</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- rsp_savings -->
+                  <div id="rsp_savings" class="hide box-wrapper">
+                     <div class="box-wrapper-content">
+                        <div class="title-desc-wrapper">
+                           <h4 class="text-uppercase">RSP Savings</h4>
+                           <p class="desc">Earn high returns on your retirement savings</p>
+                        </div>
+                        <div class="btn-wrapper">
+                           <a href="https://infinity.icicibank.ca/CARET/BANKAWAY?Action.ICICAAOF.NewUser.Init=Y&AppSignonBankId=ICI86" class="btn btn-primary bold">Apply Now</a>
+                           <a href="https://www.icicibank.ca/en/personal/investments/rsps" class="btn btn-primary bold btn-red">Learn More</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- rsp_gic -->
+                  <div id="rsp_gic" class="hide box-wrapper">
+                     <div class="box-wrapper-content">
+                        <div class="title-desc-wrapper">
+                           <h4 class="text-uppercase">RSP GIC</h4>
+                           <p class="desc">Invest at a guaranteed interest rate for a fixed term</p>
+                        </div>
+                        <div class="btn-wrapper">
+                           <a href="https://infinity.icicibank.ca/CARET/BANKAWAY?Action.ICICAAOF.NewUser.Init=Y&AppSignonBankId=ICI86" class="btn btn-primary bold">Apply Now</a>
+                           <a href="https://www.icicibank.ca/en/personal/investments/rsps" class="btn btn-primary bold btn-red">Learn More</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <!--Custom Footer To Display In PDF-->
+                <div id="footerToPrint">
+                   <p>
+                      Note: Our recommendations may change based on the information you will provide below. Our recommendations are for illustrative and general information purpose only. This tool is not for solicitation of products or services and is only for illustrative and general recommendation purpose. It should not be relied upon as financial, investment or other advice from ICICI Bank Canada
+                   </p>
+                </div>
+            </div>
+         </div>
+      </div>
+      
+      <!-- YES/NO option -->
+      <div id="wrapperYesNo" class="row pb-5" data-html2canvas-ignore>
+         <div class="col-12">
+            <div class="pd-left">
+               <div class="form-check">
+                  <input class="form-check-input d" type="radio" name="option" id="YES" data-bs-toggle="modal" data-bs-target="#staticBackdropYes">
+                  <label class="form-check-label" for="YES">
+                     YES - I have read and understood the recommendations of this table
+                  </label>
+               </div>
+               <div class="form-check">
+                  <input class="form-check-input d e" type="radio" name="option" id="NO" data-bs-toggle="modal" data-bs-target="#staticBackdropNo">
+                  <label class="form-check-label" for="NO">
+                      NO - I need more help
+                  </label>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!--Modal Popup for YES option-->
+    <div class="modal fade" id="staticBackdropYes" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+                <a href="https://www.icicibank.ca/en/promo/digitization/index" target="_blank">Click here</a> to proceed to apply for an account online
+            </p>
+            <p>OR</p>
+            <p><a href="https://www.icicibank.ca/en/abouticicibank/contactus" target="_blank">Get in Touch with us.</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-red" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Modal Popup for NO option-->
+    <div class="modal fade" id="staticBackdropNo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Please call the call center or meet a branch or ilounge representative to help you choose the best account. <br>You may <a href="https://www.icicibank.ca/en/abouticicibank/contactus" target="_blank">get in touch with us here</a>.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-red" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- NOTE -->
+      <div class="row">
+         <div class="col-12">
+            <div class="pd-left pb-5">
+               <p class="sm-line-height">
+                  Note: Our recommendations may change based on the information you will provide below. Our recommendations are for illustrative and general information purpose only. This tool is not for solicitation of products or services and is only for illustrative and general recommendation purpose. It should not be relied upon as financial, investment or other advice from ICICI Bank Canada
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+    </div>
+   
+   <!--footer-->
+   <footer>
+      <div class="container-fluid">
+         <div class="row">
+                <div class="col-8 col-md-6">
+                    <div class="footer-menu">
+                        <div>
+                            <a href="https://www.icicibank.ca/en/legal/default" class="d-block">Legal</a>
+                            <a href="https://www.icicibank.ca/en/privacy/default" class="d-block">Privacy Policy</a>
+                        </div>
+                        <div>
+                            <a href="https://www.icicibank.ca/en/safebanking/safebanking" class="d-block">Safe Banking</a>
+                            <a href="https://www.icicibank.ca/en/abouticicibank/contactus" class="d-block">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6">
+                    <div class="pb-1">
+                        <a href="https://www.icicibank.ca/en/promo/two-homes-one-bank/clickhere">
+                            <img src="images/new.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
+   <script>
+      // ******* Scrolldown to the specified section on load
+      document.getElementById('APRT').scrollIntoView();
+
+      // ******* URL parameter
+      const queryString = window.location.search;
+      // console.log(queryString.split('?')[1]);
+
+      if(queryString) {
+         const urlParams = queryString.split('?')[1];
+         // console.log(urlParams);
+
+         const urlParamsResult = urlParams.split('&');
+         // console.log(urlParamsResult[0]);
+         // console.log(urlParamsResult[1]);
+
+         // const totalResult = urlParamsResult.length;
+         // console.log('length : ' + totalResult);
+
+         // for(var j = 0; j < urlParamsResult.length; j++) {
+         //    var urlParamsResultList = urlParamsResult[j];
+         //    console.log(urlParamsResultList);
+         // }
+
+         jQuery(function($) {
+            setTimeout(function() {
+               for(var i = 0; i < urlParamsResult.length; i++) {
+                  $('.box-wrapper').filter('#'+urlParamsResult[i]).show().removeClass('hide');
+               }
+               $('.box-wrapper.hide').remove();
+            },1000);
+         });
+      }
+      else {
+         document.getElementById('product_recommand').remove();
+
+         var target = document.getElementById('print_pdf_btn_wrapper');
+         var notFound = document.createElement('p');
+         notFound.textContent = 'Not found any product recommendation...';
+         target.parentNode.insertBefore(notFound, target);
+      }
+
+
+      setTimeout(function() {
+
+         // var script = document.createElement('script');
+         // script.setAttribute('src', 'js/' + urlParams + '.js');
+         // document.body.appendChild(script);
+
+
+         // ******* PRINT Button
+         var printBtn = document.createElement('button');
+         printBtn.setAttribute('onclick','window.print()');
+         printBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#AE2A30" class="bi bi-printer-fill" viewBox="0 0 16 16">
+  <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
+  <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+</svg>`;
+         document.getElementById('print_pdf_btn_wrapper').appendChild(printBtn);
+
+
+         // ******* PDF Button
+         var pdfBtn = document.createElement('button');
+         pdfBtn.setAttribute('id','generatePDF');
+         pdfBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#AE2A30" class="bi bi-file-earmark-pdf-fill" viewBox="0 0 16 16">
+  <path d="M5.523 12.424c.14-.082.293-.162.459-.238a7.878 7.878 0 0 1-.45.606c-.28.337-.498.516-.635.572a.266.266 0 0 1-.035.012.282.282 0 0 1-.026-.044c-.056-.11-.054-.216.04-.36.106-.165.319-.354.647-.548zm2.455-1.647c-.119.025-.237.05-.356.078a21.148 21.148 0 0 0 .5-1.05 12.045 12.045 0 0 0 .51.858c-.217.032-.436.07-.654.114zm2.525.939a3.881 3.881 0 0 1-.435-.41c.228.005.434.022.612.054.317.057.466.147.518.209a.095.095 0 0 1 .026.064.436.436 0 0 1-.06.2.307.307 0 0 1-.094.124.107.107 0 0 1-.069.015c-.09-.003-.258-.066-.498-.256zM8.278 6.97c-.04.244-.108.524-.2.829a4.86 4.86 0 0 1-.089-.346c-.076-.353-.087-.63-.046-.822.038-.177.11-.248.196-.283a.517.517 0 0 1 .145-.04c.013.03.028.092.032.198.005.122-.007.277-.038.465z"/>
+  <path fill-rule="evenodd" d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM4.165 13.668c.09.18.23.343.438.419.207.075.412.04.58-.03.318-.13.635-.436.926-.786.333-.401.683-.927 1.021-1.51a11.651 11.651 0 0 1 1.997-.406c.3.383.61.713.91.95.28.22.603.403.934.417a.856.856 0 0 0 .51-.138c.155-.101.27-.247.354-.416.09-.181.145-.37.138-.563a.844.844 0 0 0-.2-.518c-.226-.27-.596-.4-.96-.465a5.76 5.76 0 0 0-1.335-.05 10.954 10.954 0 0 1-.98-1.686c.25-.66.437-1.284.52-1.794.036-.218.055-.426.048-.614a1.238 1.238 0 0 0-.127-.538.7.7 0 0 0-.477-.365c-.202-.043-.41 0-.601.077-.377.15-.576.47-.651.823-.073.34-.04.736.046 1.136.088.406.238.848.43 1.295a19.697 19.697 0 0 1-1.062 2.227 7.662 7.662 0 0 0-1.482.645c-.37.22-.699.48-.897.787-.21.326-.275.714-.08 1.103z"/>
+</svg>`;
+         document.getElementById('print_pdf_btn_wrapper').appendChild(pdfBtn);
+
+         const currentDate = new Date().toLocaleDateString();
+        const date = document.getElementById('date').innerHTML = currentDate;
+        
+
+         // print page as pdf
+         document.getElementById("generatePDF")
+         .addEventListener("click", () => {
+           var headerPDF = window.document.getElementById("headerToPrint").innerHTML;
+           const mainContent = this.document.getElementById("product_recommand");
+           var footerPDF = window.document.getElementById("footerToPrint").innerHTML;
+                const sourceToPrint = headerPDF.concat(mainContent.outerHTML,footerPDF);      // outerHTML is used to convert [object HtmlDivElement] to string
+                console.log(mainContent);
+                console.log(window);
+                var opt = {
+                   margin: 1,
+                   filename: 'myfile.pdf',
+                   image: { type: 'jpeg', quality: 0.98 },
+                   html2canvas: { scale: 2},
+                   jsPDF: { unit: 'cm', format: 'letter', orientation: 'portrait' }
+                };
+                html2pdf().from(sourceToPrint).set(opt).save();
+         });
+      },1000);
+
+   </script>
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
